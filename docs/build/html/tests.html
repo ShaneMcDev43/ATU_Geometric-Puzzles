@@ -1,0 +1,214 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>tests package &mdash; Geometric Puzzles 1 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=29a6c3e3"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Geometric Puzzles
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">tests package</a><ul>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-tests.test_geometric_shapes">tests.test_geometric_shapes module</a><ul>
+<li><a class="reference internal" href="#tests.test_geometric_shapes.TestGeometricPuzzle"><code class="docutils literal notranslate"><span class="pre">TestGeometricPuzzle</span></code></a><ul>
+<li><a class="reference internal" href="#tests.test_geometric_shapes.TestGeometricPuzzle.setUp"><code class="docutils literal notranslate"><span class="pre">TestGeometricPuzzle.setUp()</span></code></a></li>
+<li><a class="reference internal" href="#tests.test_geometric_shapes.TestGeometricPuzzle.test_initial_player_pattern"><code class="docutils literal notranslate"><span class="pre">TestGeometricPuzzle.test_initial_player_pattern()</span></code></a></li>
+<li><a class="reference internal" href="#tests.test_geometric_shapes.TestGeometricPuzzle.test_is_solved"><code class="docutils literal notranslate"><span class="pre">TestGeometricPuzzle.test_is_solved()</span></code></a></li>
+<li><a class="reference internal" href="#tests.test_geometric_shapes.TestGeometricPuzzle.test_toggle_pattern"><code class="docutils literal notranslate"><span class="pre">TestGeometricPuzzle.test_toggle_pattern()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-tests.test_puzzle_base">tests.test_puzzle_base module</a><ul>
+<li><a class="reference internal" href="#tests.test_puzzle_base.TestPuzzleBase"><code class="docutils literal notranslate"><span class="pre">TestPuzzleBase</span></code></a><ul>
+<li><a class="reference internal" href="#tests.test_puzzle_base.TestPuzzleBase.setUp"><code class="docutils literal notranslate"><span class="pre">TestPuzzleBase.setUp()</span></code></a></li>
+<li><a class="reference internal" href="#tests.test_puzzle_base.TestPuzzleBase.test_display_instructions_not_implemented"><code class="docutils literal notranslate"><span class="pre">TestPuzzleBase.test_display_instructions_not_implemented()</span></code></a></li>
+<li><a class="reference internal" href="#tests.test_puzzle_base.TestPuzzleBase.test_initialization"><code class="docutils literal notranslate"><span class="pre">TestPuzzleBase.test_initialization()</span></code></a></li>
+<li><a class="reference internal" href="#tests.test_puzzle_base.TestPuzzleBase.test_mock_display_instructions"><code class="docutils literal notranslate"><span class="pre">TestPuzzleBase.test_mock_display_instructions()</span></code></a></li>
+<li><a class="reference internal" href="#tests.test_puzzle_base.TestPuzzleBase.test_mock_solve"><code class="docutils literal notranslate"><span class="pre">TestPuzzleBase.test_mock_solve()</span></code></a></li>
+<li><a class="reference internal" href="#tests.test_puzzle_base.TestPuzzleBase.test_solve_not_implemented"><code class="docutils literal notranslate"><span class="pre">TestPuzzleBase.test_solve_not_implemented()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-tests">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Geometric Puzzles</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">tests package</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/tests.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="tests-package">
+<h1>tests package<a class="headerlink" href="#tests-package" title="Link to this heading"></a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Link to this heading"></a></h2>
+</section>
+<section id="module-tests.test_geometric_shapes">
+<span id="tests-test-geometric-shapes-module"></span><h2>tests.test_geometric_shapes module<a class="headerlink" href="#module-tests.test_geometric_shapes" title="Link to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="tests.test_geometric_shapes.TestGeometricPuzzle">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tests.test_geometric_shapes.</span></span><span class="sig-name descname"><span class="pre">TestGeometricPuzzle</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">methodName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'runTest'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/test_geometric_shapes.html#TestGeometricPuzzle"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.test_geometric_shapes.TestGeometricPuzzle" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">TestCase</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.test_geometric_shapes.TestGeometricPuzzle.setUp">
+<span class="sig-name descname"><span class="pre">setUp</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/test_geometric_shapes.html#TestGeometricPuzzle.setUp"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.test_geometric_shapes.TestGeometricPuzzle.setUp" title="Link to this definition"></a></dt>
+<dd><p>Set up the puzzle instance for testing.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.test_geometric_shapes.TestGeometricPuzzle.test_initial_player_pattern">
+<span class="sig-name descname"><span class="pre">test_initial_player_pattern</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/test_geometric_shapes.html#TestGeometricPuzzle.test_initial_player_pattern"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.test_geometric_shapes.TestGeometricPuzzle.test_initial_player_pattern" title="Link to this definition"></a></dt>
+<dd><p>Test if the player’s pattern is initialized with all zeros.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.test_geometric_shapes.TestGeometricPuzzle.test_is_solved">
+<span class="sig-name descname"><span class="pre">test_is_solved</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/test_geometric_shapes.html#TestGeometricPuzzle.test_is_solved"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.test_geometric_shapes.TestGeometricPuzzle.test_is_solved" title="Link to this definition"></a></dt>
+<dd><p>Test if the puzzle detects a solved state.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.test_geometric_shapes.TestGeometricPuzzle.test_toggle_pattern">
+<span class="sig-name descname"><span class="pre">test_toggle_pattern</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/test_geometric_shapes.html#TestGeometricPuzzle.test_toggle_pattern"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.test_geometric_shapes.TestGeometricPuzzle.test_toggle_pattern" title="Link to this definition"></a></dt>
+<dd><p>Test if toggling a cell updates the player’s pattern correctly.</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-tests.test_puzzle_base">
+<span id="tests-test-puzzle-base-module"></span><h2>tests.test_puzzle_base module<a class="headerlink" href="#module-tests.test_puzzle_base" title="Link to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="tests.test_puzzle_base.TestPuzzleBase">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tests.test_puzzle_base.</span></span><span class="sig-name descname"><span class="pre">TestPuzzleBase</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">methodName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'runTest'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/test_puzzle_base.html#TestPuzzleBase"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.test_puzzle_base.TestPuzzleBase" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">TestCase</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.test_puzzle_base.TestPuzzleBase.setUp">
+<span class="sig-name descname"><span class="pre">setUp</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/test_puzzle_base.html#TestPuzzleBase.setUp"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.test_puzzle_base.TestPuzzleBase.setUp" title="Link to this definition"></a></dt>
+<dd><p>Set up a subclass to test PuzzleBase.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.test_puzzle_base.TestPuzzleBase.test_display_instructions_not_implemented">
+<span class="sig-name descname"><span class="pre">test_display_instructions_not_implemented</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/test_puzzle_base.html#TestPuzzleBase.test_display_instructions_not_implemented"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.test_puzzle_base.TestPuzzleBase.test_display_instructions_not_implemented" title="Link to this definition"></a></dt>
+<dd><p>Test that the base class raises NotImplementedError for display_instructions.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.test_puzzle_base.TestPuzzleBase.test_initialization">
+<span class="sig-name descname"><span class="pre">test_initialization</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/test_puzzle_base.html#TestPuzzleBase.test_initialization"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.test_puzzle_base.TestPuzzleBase.test_initialization" title="Link to this definition"></a></dt>
+<dd><p>Test that a PuzzleBase subclass initializes correctly.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.test_puzzle_base.TestPuzzleBase.test_mock_display_instructions">
+<span class="sig-name descname"><span class="pre">test_mock_display_instructions</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/test_puzzle_base.html#TestPuzzleBase.test_mock_display_instructions"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.test_puzzle_base.TestPuzzleBase.test_mock_display_instructions" title="Link to this definition"></a></dt>
+<dd><p>Test that the subclass implements display_instructions.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.test_puzzle_base.TestPuzzleBase.test_mock_solve">
+<span class="sig-name descname"><span class="pre">test_mock_solve</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/test_puzzle_base.html#TestPuzzleBase.test_mock_solve"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.test_puzzle_base.TestPuzzleBase.test_mock_solve" title="Link to this definition"></a></dt>
+<dd><p>Test that the subclass implements solve.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.test_puzzle_base.TestPuzzleBase.test_solve_not_implemented">
+<span class="sig-name descname"><span class="pre">test_solve_not_implemented</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/test_puzzle_base.html#TestPuzzleBase.test_solve_not_implemented"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.test_puzzle_base.TestPuzzleBase.test_solve_not_implemented" title="Link to this definition"></a></dt>
+<dd><p>Test that the base class raises NotImplementedError for solve.</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-tests">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-tests" title="Link to this heading"></a></h2>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Shane McDevitt.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

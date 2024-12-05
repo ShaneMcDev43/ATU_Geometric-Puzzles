@@ -1,0 +1,420 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>puzzles package &mdash; Geometric Puzzles 1 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=29a6c3e3"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Geometric Puzzles
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">puzzles package</a><ul>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-puzzles.geometric_shapes">puzzles.geometric_shapes module</a><ul>
+<li><a class="reference internal" href="#puzzles.geometric_shapes.GeometricPuzzle"><code class="docutils literal notranslate"><span class="pre">GeometricPuzzle</span></code></a><ul>
+<li><a class="reference internal" href="#puzzles.geometric_shapes.GeometricPuzzle.target_pattern"><code class="docutils literal notranslate"><span class="pre">GeometricPuzzle.target_pattern</span></code></a></li>
+<li><a class="reference internal" href="#puzzles.geometric_shapes.GeometricPuzzle.player_pattern"><code class="docutils literal notranslate"><span class="pre">GeometricPuzzle.player_pattern</span></code></a></li>
+<li><a class="reference internal" href="#puzzles.geometric_shapes.GeometricPuzzle.display_instructions"><code class="docutils literal notranslate"><span class="pre">GeometricPuzzle.display_instructions()</span></code></a></li>
+<li><a class="reference internal" href="#puzzles.geometric_shapes.GeometricPuzzle.display_patterns"><code class="docutils literal notranslate"><span class="pre">GeometricPuzzle.display_patterns()</span></code></a></li>
+<li><a class="reference internal" href="#puzzles.geometric_shapes.GeometricPuzzle.generate_target_pattern"><code class="docutils literal notranslate"><span class="pre">GeometricPuzzle.generate_target_pattern()</span></code></a></li>
+<li><a class="reference internal" href="#puzzles.geometric_shapes.GeometricPuzzle.is_solved"><code class="docutils literal notranslate"><span class="pre">GeometricPuzzle.is_solved()</span></code></a></li>
+<li><a class="reference internal" href="#puzzles.geometric_shapes.GeometricPuzzle.solve"><code class="docutils literal notranslate"><span class="pre">GeometricPuzzle.solve()</span></code></a></li>
+<li><a class="reference internal" href="#puzzles.geometric_shapes.GeometricPuzzle.update_pattern"><code class="docutils literal notranslate"><span class="pre">GeometricPuzzle.update_pattern()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-puzzles.puzzle_base">puzzles.puzzle_base module</a><ul>
+<li><a class="reference internal" href="#puzzles.puzzle_base.PuzzleBase"><code class="docutils literal notranslate"><span class="pre">PuzzleBase</span></code></a><ul>
+<li><a class="reference internal" href="#puzzles.puzzle_base.PuzzleBase.name"><code class="docutils literal notranslate"><span class="pre">PuzzleBase.name</span></code></a></li>
+<li><a class="reference internal" href="#puzzles.puzzle_base.PuzzleBase.display_instructions"><code class="docutils literal notranslate"><span class="pre">PuzzleBase.display_instructions()</span></code></a></li>
+<li><a class="reference internal" href="#puzzles.puzzle_base.PuzzleBase.solve"><code class="docutils literal notranslate"><span class="pre">PuzzleBase.solve()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-puzzles">Module contents</a><ul>
+<li><a class="reference internal" href="#puzzles.GeometricPuzzle"><code class="docutils literal notranslate"><span class="pre">GeometricPuzzle</span></code></a><ul>
+<li><a class="reference internal" href="#puzzles.GeometricPuzzle.target_pattern"><code class="docutils literal notranslate"><span class="pre">GeometricPuzzle.target_pattern</span></code></a></li>
+<li><a class="reference internal" href="#puzzles.GeometricPuzzle.player_pattern"><code class="docutils literal notranslate"><span class="pre">GeometricPuzzle.player_pattern</span></code></a></li>
+<li><a class="reference internal" href="#puzzles.GeometricPuzzle.display_instructions"><code class="docutils literal notranslate"><span class="pre">GeometricPuzzle.display_instructions()</span></code></a></li>
+<li><a class="reference internal" href="#puzzles.GeometricPuzzle.display_patterns"><code class="docutils literal notranslate"><span class="pre">GeometricPuzzle.display_patterns()</span></code></a></li>
+<li><a class="reference internal" href="#puzzles.GeometricPuzzle.generate_target_pattern"><code class="docutils literal notranslate"><span class="pre">GeometricPuzzle.generate_target_pattern()</span></code></a></li>
+<li><a class="reference internal" href="#puzzles.GeometricPuzzle.is_solved"><code class="docutils literal notranslate"><span class="pre">GeometricPuzzle.is_solved()</span></code></a></li>
+<li><a class="reference internal" href="#puzzles.GeometricPuzzle.solve"><code class="docutils literal notranslate"><span class="pre">GeometricPuzzle.solve()</span></code></a></li>
+<li><a class="reference internal" href="#puzzles.GeometricPuzzle.update_pattern"><code class="docutils literal notranslate"><span class="pre">GeometricPuzzle.update_pattern()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#puzzles.PuzzleBase"><code class="docutils literal notranslate"><span class="pre">PuzzleBase</span></code></a><ul>
+<li><a class="reference internal" href="#puzzles.PuzzleBase.name"><code class="docutils literal notranslate"><span class="pre">PuzzleBase.name</span></code></a></li>
+<li><a class="reference internal" href="#puzzles.PuzzleBase.display_instructions"><code class="docutils literal notranslate"><span class="pre">PuzzleBase.display_instructions()</span></code></a></li>
+<li><a class="reference internal" href="#puzzles.PuzzleBase.solve"><code class="docutils literal notranslate"><span class="pre">PuzzleBase.solve()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Geometric Puzzles</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">puzzles package</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/puzzles.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="puzzles-package">
+<h1>puzzles package<a class="headerlink" href="#puzzles-package" title="Link to this heading"></a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Link to this heading"></a></h2>
+</section>
+<section id="module-puzzles.geometric_shapes">
+<span id="puzzles-geometric-shapes-module"></span><h2>puzzles.geometric_shapes module<a class="headerlink" href="#module-puzzles.geometric_shapes" title="Link to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="puzzles.geometric_shapes.GeometricPuzzle">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">puzzles.geometric_shapes.</span></span><span class="sig-name descname"><span class="pre">GeometricPuzzle</span></span><a class="reference internal" href="_modules/puzzles/geometric_shapes.html#GeometricPuzzle"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#puzzles.geometric_shapes.GeometricPuzzle" title="Link to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#puzzles.puzzle_base.PuzzleBase" title="puzzles.puzzle_base.PuzzleBase"><code class="xref py py-class docutils literal notranslate"><span class="pre">PuzzleBase</span></code></a></p>
+<p>A puzzle where players align geometric shapes to match a target pattern.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="puzzles.geometric_shapes.GeometricPuzzle.target_pattern">
+<span class="sig-name descname"><span class="pre">target_pattern</span></span><a class="headerlink" href="#puzzles.geometric_shapes.GeometricPuzzle.target_pattern" title="Link to this definition"></a></dt>
+<dd><p>The randomly generated target pattern.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list[list[int]]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="puzzles.geometric_shapes.GeometricPuzzle.player_pattern">
+<span class="sig-name descname"><span class="pre">player_pattern</span></span><a class="headerlink" href="#puzzles.geometric_shapes.GeometricPuzzle.player_pattern" title="Link to this definition"></a></dt>
+<dd><p>The player’s current pattern.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list[list[int]]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="puzzles.geometric_shapes.GeometricPuzzle.display_instructions">
+<span class="sig-name descname"><span class="pre">display_instructions</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/puzzles/geometric_shapes.html#GeometricPuzzle.display_instructions"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#puzzles.geometric_shapes.GeometricPuzzle.display_instructions" title="Link to this definition"></a></dt>
+<dd><p>Displays instructions for solving the geometric puzzle.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="puzzles.geometric_shapes.GeometricPuzzle.display_patterns">
+<span class="sig-name descname"><span class="pre">display_patterns</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/puzzles/geometric_shapes.html#GeometricPuzzle.display_patterns"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#puzzles.geometric_shapes.GeometricPuzzle.display_patterns" title="Link to this definition"></a></dt>
+<dd><p>Displays both the target pattern and the player’s current pattern.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="puzzles.geometric_shapes.GeometricPuzzle.generate_target_pattern">
+<span class="sig-name descname"><span class="pre">generate_target_pattern</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/puzzles/geometric_shapes.html#GeometricPuzzle.generate_target_pattern"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#puzzles.geometric_shapes.GeometricPuzzle.generate_target_pattern" title="Link to this definition"></a></dt>
+<dd><p>Generates a random target pattern for the puzzle.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>A 2D list representing the target pattern.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>list[list[int]]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="puzzles.geometric_shapes.GeometricPuzzle.is_solved">
+<span class="sig-name descname"><span class="pre">is_solved</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/puzzles/geometric_shapes.html#GeometricPuzzle.is_solved"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#puzzles.geometric_shapes.GeometricPuzzle.is_solved" title="Link to this definition"></a></dt>
+<dd><p>Checks if the player’s pattern matches the target pattern.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>True if the patterns match, False otherwise.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="puzzles.geometric_shapes.GeometricPuzzle.solve">
+<span class="sig-name descname"><span class="pre">solve</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/puzzles/geometric_shapes.html#GeometricPuzzle.solve"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#puzzles.geometric_shapes.GeometricPuzzle.solve" title="Link to this definition"></a></dt>
+<dd><p>Runs the main logic for solving the puzzle, allowing the player to interactively toggle positions.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="puzzles.geometric_shapes.GeometricPuzzle.update_pattern">
+<span class="sig-name descname"><span class="pre">update_pattern</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/puzzles/geometric_shapes.html#GeometricPuzzle.update_pattern"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#puzzles.geometric_shapes.GeometricPuzzle.update_pattern" title="Link to this definition"></a></dt>
+<dd><p>Toggles the state of a position in the player’s pattern.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>x</strong> (<em>int</em>) – The row index to toggle.</p></li>
+<li><p><strong>y</strong> (<em>int</em>) – The column index to toggle.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-puzzles.puzzle_base">
+<span id="puzzles-puzzle-base-module"></span><h2>puzzles.puzzle_base module<a class="headerlink" href="#module-puzzles.puzzle_base" title="Link to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="puzzles.puzzle_base.PuzzleBase">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">puzzles.puzzle_base.</span></span><span class="sig-name descname"><span class="pre">PuzzleBase</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/puzzles/puzzle_base.html#PuzzleBase"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#puzzles.puzzle_base.PuzzleBase" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Base class for all puzzles.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="puzzles.puzzle_base.PuzzleBase.name">
+<span class="sig-name descname"><span class="pre">name</span></span><a class="headerlink" href="#puzzles.puzzle_base.PuzzleBase.name" title="Link to this definition"></a></dt>
+<dd><p>The name of the puzzle.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="puzzles.puzzle_base.PuzzleBase.display_instructions">
+<span class="sig-name descname"><span class="pre">display_instructions</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/puzzles/puzzle_base.html#PuzzleBase.display_instructions"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#puzzles.puzzle_base.PuzzleBase.display_instructions" title="Link to this definition"></a></dt>
+<dd><p>Display puzzle instructions to the player.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Raises<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>NotImplementedError</strong> – If the method is not implemented in a subclass.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="puzzles.puzzle_base.PuzzleBase.solve">
+<span class="sig-name descname"><span class="pre">solve</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/puzzles/puzzle_base.html#PuzzleBase.solve"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#puzzles.puzzle_base.PuzzleBase.solve" title="Link to this definition"></a></dt>
+<dd><p>Logic for solving the puzzle.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Raises<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>NotImplementedError</strong> – If the method is not implemented in a subclass.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-puzzles">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-puzzles" title="Link to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="puzzles.GeometricPuzzle">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">puzzles.</span></span><span class="sig-name descname"><span class="pre">GeometricPuzzle</span></span><a class="reference internal" href="_modules/puzzles/geometric_shapes.html#GeometricPuzzle"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#puzzles.GeometricPuzzle" title="Link to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#puzzles.puzzle_base.PuzzleBase" title="puzzles.puzzle_base.PuzzleBase"><code class="xref py py-class docutils literal notranslate"><span class="pre">PuzzleBase</span></code></a></p>
+<p>A puzzle where players align geometric shapes to match a target pattern.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="puzzles.GeometricPuzzle.target_pattern">
+<span class="sig-name descname"><span class="pre">target_pattern</span></span><a class="headerlink" href="#puzzles.GeometricPuzzle.target_pattern" title="Link to this definition"></a></dt>
+<dd><p>The randomly generated target pattern.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list[list[int]]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="puzzles.GeometricPuzzle.player_pattern">
+<span class="sig-name descname"><span class="pre">player_pattern</span></span><a class="headerlink" href="#puzzles.GeometricPuzzle.player_pattern" title="Link to this definition"></a></dt>
+<dd><p>The player’s current pattern.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list[list[int]]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="puzzles.GeometricPuzzle.display_instructions">
+<span class="sig-name descname"><span class="pre">display_instructions</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/puzzles/geometric_shapes.html#GeometricPuzzle.display_instructions"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#puzzles.GeometricPuzzle.display_instructions" title="Link to this definition"></a></dt>
+<dd><p>Displays instructions for solving the geometric puzzle.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="puzzles.GeometricPuzzle.display_patterns">
+<span class="sig-name descname"><span class="pre">display_patterns</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/puzzles/geometric_shapes.html#GeometricPuzzle.display_patterns"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#puzzles.GeometricPuzzle.display_patterns" title="Link to this definition"></a></dt>
+<dd><p>Displays both the target pattern and the player’s current pattern.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="puzzles.GeometricPuzzle.generate_target_pattern">
+<span class="sig-name descname"><span class="pre">generate_target_pattern</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/puzzles/geometric_shapes.html#GeometricPuzzle.generate_target_pattern"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#puzzles.GeometricPuzzle.generate_target_pattern" title="Link to this definition"></a></dt>
+<dd><p>Generates a random target pattern for the puzzle.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>A 2D list representing the target pattern.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>list[list[int]]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="puzzles.GeometricPuzzle.is_solved">
+<span class="sig-name descname"><span class="pre">is_solved</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/puzzles/geometric_shapes.html#GeometricPuzzle.is_solved"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#puzzles.GeometricPuzzle.is_solved" title="Link to this definition"></a></dt>
+<dd><p>Checks if the player’s pattern matches the target pattern.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>True if the patterns match, False otherwise.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="puzzles.GeometricPuzzle.solve">
+<span class="sig-name descname"><span class="pre">solve</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/puzzles/geometric_shapes.html#GeometricPuzzle.solve"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#puzzles.GeometricPuzzle.solve" title="Link to this definition"></a></dt>
+<dd><p>Runs the main logic for solving the puzzle, allowing the player to interactively toggle positions.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="puzzles.GeometricPuzzle.update_pattern">
+<span class="sig-name descname"><span class="pre">update_pattern</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/puzzles/geometric_shapes.html#GeometricPuzzle.update_pattern"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#puzzles.GeometricPuzzle.update_pattern" title="Link to this definition"></a></dt>
+<dd><p>Toggles the state of a position in the player’s pattern.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>x</strong> (<em>int</em>) – The row index to toggle.</p></li>
+<li><p><strong>y</strong> (<em>int</em>) – The column index to toggle.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="puzzles.PuzzleBase">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">puzzles.</span></span><span class="sig-name descname"><span class="pre">PuzzleBase</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/puzzles/puzzle_base.html#PuzzleBase"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#puzzles.PuzzleBase" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Base class for all puzzles.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="puzzles.PuzzleBase.name">
+<span class="sig-name descname"><span class="pre">name</span></span><a class="headerlink" href="#puzzles.PuzzleBase.name" title="Link to this definition"></a></dt>
+<dd><p>The name of the puzzle.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="puzzles.PuzzleBase.display_instructions">
+<span class="sig-name descname"><span class="pre">display_instructions</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/puzzles/puzzle_base.html#PuzzleBase.display_instructions"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#puzzles.PuzzleBase.display_instructions" title="Link to this definition"></a></dt>
+<dd><p>Display puzzle instructions to the player.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Raises<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>NotImplementedError</strong> – If the method is not implemented in a subclass.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="puzzles.PuzzleBase.solve">
+<span class="sig-name descname"><span class="pre">solve</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/puzzles/puzzle_base.html#PuzzleBase.solve"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#puzzles.PuzzleBase.solve" title="Link to this definition"></a></dt>
+<dd><p>Logic for solving the puzzle.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Raises<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>NotImplementedError</strong> – If the method is not implemented in a subclass.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Shane McDevitt.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
